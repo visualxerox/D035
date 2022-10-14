@@ -40,6 +40,7 @@ h6 {
 
 h1 {
     font-size: 50px;
+    font-family: 'Bungee Spice', cursive;
 }
 
 /* Header */
@@ -146,6 +147,7 @@ nav {
 
 .textos-header {
     margin: 0 0 0 30px;
+    font-family: 'Bodoni Moda', serif;
 }
 
 .contenido-header p {
@@ -293,7 +295,7 @@ nav {
 /* Results*/
 
 .results {
-    background: #2570ff;
+    background: #f78d17;
     padding-top: 30px;
 }
 
@@ -362,6 +364,23 @@ nav {
     border-radius: 5px;
 }
 
+/* video */
+.player video {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  /* para quitar el espacio que hay en la parte de abajo */
+  vertical-align: middle; /*por que por defecto es baseline*/
+  /* para que el poster (imagen) se expande de manera proporcional a todo el contenedor, no pierde proporcion la imagen pero si se amplia */
+  object-fit: cover;
+}
+
+.player-title {
+  color: white;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 20px;
+}
+
 /*Services*/
 
 .services {
@@ -396,50 +415,97 @@ nav {
 }
 
 /*Footer*/
+footer{
+    background: #f78d17;
+    color: #fff;
+}
 
-footer {
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'san serif';
+}
+
+input[type='text'],
+input[type='email']{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type='submit']{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.input[type='submit']:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #1D8FE1;
+}
+/* footer {
     background: #f2f2f2;
     padding: 60px 0;
     overflow: hidden;
     /*para que nada lsaga de la zona*/
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     /*para poner uno debajo del otro*/
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /*para que el espacio se reparta equitatiuvamente*/
-    margin: auto;
+    /* margin: auto; */
     /*centra todo*/
-}
+/* } */
 
-.partFooter {
+/* .partFooter {
     width: 20%;
     text-align: center;
-}
+} */
 
-.partFooter h4 {
+/* .partFooter h4 {
     color: #1d273b;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
-}
+} */
 
-.partFooter a {
-    display: block;
+/* .partFooter a {
+    display: block; */
     /*para que se ponga uno debajo del otro, si se pusiera in-line-in-block se pondrian  uno al lado del otro. Los elementos bloque usan todo el espacio */
-    text-decoration: none;
+    /* text-decoration: none;
     color: #5d6678;
     font-weight: 300;
     transition: color .3s ease-in-out;
     margin-bottom: 10px;
-}
+} */
 
-.partFooter a:hover {
+/* .partFooter a:hover {
     color: #1aa863;
-}
-
+} */
+/* 
 .partFooter img {
     width: 70%;
-}
+} */ 
 
 .social-media i {
     font-size: 20px;
