@@ -299,6 +299,10 @@ nav {
     padding-top: 30px;
 }
 
+.result-parrafo {
+    text-align: justify;
+}
+
 .content-results {
     display: flex;
     justify-content: space-evenly;
@@ -364,6 +368,33 @@ nav {
     border-radius: 5px;
 }
 
+/* info */
+    .info {
+        background: #707070;
+        color: #fff;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .contenedor {
+        display: flex;
+    }
+
+    .sub-title {
+        color: #fff;
+    }
+
+    .info p {
+        padding-bottom: 25px;
+    }
+
+    .parrafo {
+        /* width: 60px; */
+        height: 210px;
+        padding: 0 30px;
+        margin-top: 30px;
+    }
+
 /* video */
 .player video {
   inline-size: 100%;
@@ -372,6 +403,7 @@ nav {
   vertical-align: middle; /*por que por defecto es baseline*/
   /* para que el poster (imagen) se expande de manera proporcional a todo el contenedor, no pierde proporcion la imagen pero si se amplia */
   object-fit: cover;
+  margin-left: 95px;
 }
 
 .player-title {
@@ -387,6 +419,21 @@ nav {
     display: flex;
     justify-content: space-between;
     /*para poner uno al lado del otro*/
+}
+
+h2, h3{
+    font-size: 35px;
+}
+
+h2 {
+    padding: 38px 0;
+}
+
+
+.parrafo-hacemos {
+    font-size: 20px;
+    text-align:justify;
+    padding-right: 50px;
 }
 
 .services>img {
@@ -417,6 +464,12 @@ nav {
 /*Footer*/
 footer{
     background: #f78d17;
+    color: #fff;
+    padding-bottom: 35px;
+}
+
+.titulo {
+    font-size: 35px;
     color: #fff;
 }
 
